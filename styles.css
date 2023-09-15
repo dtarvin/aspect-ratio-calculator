@@ -1,0 +1,39 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html {
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: #614385;
+    background-image: linear-gradient(to right, #614385, #516395);
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    color: white;
+}
+
+.page-title {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    font-size: 2rem;
+}
+
+label {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.new-ar-value {
+    font-weight: bold;
+}
+
+p {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}

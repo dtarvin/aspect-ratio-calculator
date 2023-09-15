@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js"
+        integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <h2 class="page-title">Aspect Ratio Calculator</h2>
+    <!-- <p>Are you trying to calculate for a portrait image or a landscape image?</p>
+    <div id="image-mode-select">
+        <input type="radio" name="image-mode" value="portrait">portrait
+        <input type="radio" name="image-mode" value="landscape" checked>landscape
+    </div> -->
+
+    <!-- <p>Default aspect ratio: 16:9</p> -->
+    <label>What is the width of your image?
+        <input type="number" id="current-width">
+    </label>
+
+    <label>What is the height of your image?
+        <input type="number" id="current-height">
+    </label>
+
+    <button type="button" onclick="calculateCurrentAspectRatio()">Calculate</button>
+    <p>The aspect ratio of your image is: <span id="current-aspect-ratio"></span></p>
+    <label>Enter the aspect ratio to which you want to crop the image.
+        <input type="number" id="desired-ar-width" style="width:6ch;"> : <input type="number" id="desired-ar-height"
+            style="width:6ch;">
+    </label>
+    <!-- <p>Click the button below to find out what measurements are needed to convert your image to 16:9</p> -->
+    <button type="button" onclick="calculateConversion()">Calculate</button>
+    <p>To crop your image to an aspect ratio of <span id="new-aspect-ratio"></span>, you would need to have a width of
+        <span id="new-image-width"></span> and a height of <span id="new-image-height"></span>
+    </p>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
